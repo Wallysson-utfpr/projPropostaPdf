@@ -5,7 +5,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
-  font-family: 'Typewriter', sans-serif;
 }
 
 body::before {
