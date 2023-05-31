@@ -45,7 +45,7 @@ body::before {
 }
 
 .input {
-  width: 100%;
+  width: 98%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
