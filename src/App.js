@@ -244,7 +244,7 @@ const App = () => {
 
       doc.text(`QTD: `, 130, currentY + 7.9 * lineHeight);
       doc.setFont("helvetica", "bold");
-      doc.text(`${produto.quantidade}`, 160, currentY + 7.9 * lineHeight);
+      doc.text(`${produto.quantidade}`, 141, currentY + 7.9 * lineHeight);
       doc.setFont("Wire Type Mono SmallCaps Regular", "normal");
 
       doc.text(`VALOR R$:`, 158, currentY + 7.9 * lineHeight);
