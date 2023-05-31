@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'Typewriter';
-  src: url('./Teko-Light.ttf') format('truetype');
-}
-
-
+a
 body {
   position: relative;
   background-image: url('./teste.png');
