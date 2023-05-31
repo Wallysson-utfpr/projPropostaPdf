@@ -173,10 +173,14 @@ const App = () => {
     adicionarCabecalho();
 
     doc.line(20, startY + 1 * lineHeight, 190, startY + 1 * lineHeight); // Linha horizontal
-    doc.setFontSize(10);
+    doc.setFontSize(11);
+    doc.setFont("helvetica", "bold"); // Aplicar estilo negrito
+    doc.text("PEDIDO:", 20, startY + 1.6 * lineHeight, { align: "left" });
+    doc.setFont("helvetica", "bold"); // Aplicar estilo negrito
+    doc.text(`${dadosProposta.pedido}`, 37, startY + 1.6 * lineHeight);
     doc.setFont("Wire Type Mono SmallCaps Regular", "normal");
-    doc.text("PEDIDO: 0709", 20, startY + 1.6 * lineHeight, { align: "left" });
-    doc.text(`DATA: ${dadosProposta.data}`, 150, startY + 1.6 * lineHeight, {
+    doc.setFont("helvetica", "bold"); // Aplicar estilo negrito
+    doc.text(`DATA: ${dadosProposta.data}`, 180, startY + 1.6 * lineHeight, {
       align: "right",
     });
 
@@ -188,7 +192,7 @@ const App = () => {
 
     doc.text(`ENDEREÇO: `, 20, startY + 3 * lineHeight);
     doc.setFont("helvetica", "bold");
-    doc.text(`${dadosProposta.endereco}`, 47, startY + 3 * lineHeight);
+    doc.text(`${dadosProposta.endereco}`, 46, startY + 3 * lineHeight);
     doc.setFont("Wire Type Mono SmallCaps Regular", "normal");
 
     doc.text(`CIDADE: `, 20, startY + 3.7 * lineHeight);
@@ -336,6 +340,16 @@ const App = () => {
     <div className="dark-overlay">
       <div className="container">
         <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label className="label">Pedido:</label>
+            <input
+              type="text"
+              name="pedido"
+              value={dadosProposta.pedido}
+              onChange={handleChange}
+              className="input"
+            />
+          </div>
           <div className="form-group">
             <label className="label">Nome:</label>
             <input
