@@ -173,9 +173,8 @@ const App = () => {
     adicionarCabecalho();
 
     doc.line(20, startY + 1 * lineHeight, 190, startY + 1 * lineHeight); // Linha horizontal
-    doc.setFontSize(12);
-    doc.setFont("Typewriter");
-    doc.setFontType("normal");
+    doc.setFontSize(10);
+    doc.setFont("Wire Type Mono SmallCaps Regular", "normal");
     doc.text("PEDIDO: 0709", 20, startY + 1.6 * lineHeight, { align: "left" });
     doc.text(`DATA: ${dadosProposta.data}`, 150, startY + 1.6 * lineHeight, {
       align: "right",
